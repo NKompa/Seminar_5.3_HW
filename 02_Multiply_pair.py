@@ -8,7 +8,7 @@ for i in range(list1_length):
 print(list1)
 
 list2 = []
-list2_length = -(-len(list1)//2)                # чтобы округлил в бОльшую сторону без функции math
+list2_length = int(len(list1)/2+len(list1)%2)
 
 for i in range(list2_length):
     product = list1[i]*list1[len(list1)-1-i]
